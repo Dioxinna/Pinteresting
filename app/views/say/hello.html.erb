@@ -1,0 +1,15 @@
+<h1>Say#hello</h1>
+<p>Find me in app/views/say/hello.html.erb</p>
+
+<p><%=@time%></p>
+<p><%=8/2%></p>
+<p><%="hola" + " aaa"%></p>
+<p><%=2.hour.from_now.localtime%></p>
+<!-- Links utilizando helpers -->
+<%= link_to "Adios", say_goodbye_path%>
+<!-- Lista para ver todos los archivos de un directorio -->
+<ul>
+<% for file in @files #file es local al bucle %>
+	<li> Archivo: <%=file%></li>
+<% end %>
+</ul>
